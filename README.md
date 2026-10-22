@@ -22,3 +22,4 @@ The intentional removal, falsification, or unauthorized modification of cryptogr
 - This software is provided strictly for educational and auditing applications; use is entirely at your own risk.
 - The author/maintainer assumes zero liability for any direct, indirect, or consequential damages resulting from the execution, misapplication, or illegal use of this software.
 - The developer explicitly disassociates from and condemns any unlawful activity carried out using this tool.
+<img width="1419" height="951" alt="image" src="https://github.com/user-attachments/assets/9bb05409-e625-4f9d-9b74-8d16e04f451f" />
