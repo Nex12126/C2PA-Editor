@@ -1,0 +1,64 @@
+{
+  "name": "nex12126-opensource",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Local-first image metadata and C2PA editor",
+  "author": "Nex12126",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:icon": "node scripts/create-icon.mjs",
+    "build:win": "node scripts/build-windows.mjs",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@contentauth/c2pa-web": "^0.15.4",
+    "@fontsource/space-grotesk": "^5.3.0",
+    "@types/node": "^24.19.2",
+    "@types/piexifjs": "^1.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "electron": "^45.0.0",
+    "electron-builder": "^26.15.3",
+    "exifr": "^7.1.3",
+    "lucide-react": "^1.61.0",
+    "oxlint": "^1.88.0",
+    "piexifjs": "^1.0.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "sharp": "^0.35.5",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.4"
+  },
+  "main": "electron.cjs",
+  "build": {
+    "appId": "com.nex.metaeditor",
+    "productName": "Nex's Meta Editor",
+    "asar": true,
+    "directories": {
+      "output": "artifacts"
+    },
+    "files": [
+      "dist/**/*",
+      "electron.cjs",
+      "package.json",
+      "LICENSE"
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "Nexs-Meta-Editor-${version}-portable.${ext}"
+    }
+  }
+}
