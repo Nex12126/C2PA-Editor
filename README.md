@@ -1,7 +1,8 @@
 # C2PA Inspector & Toolkit
 
 A lightweight utility for inspecting, validating, stripping, and embedding C2PA (Content Credentials) metadata and EXIF blocks in media files.
-<img width="1353" height="1100" alt="image" src="https://github.com/user-attachments/assets/399f9eca-e2ff-49a6-945b-b563a5d3d1c3" />
+<img width="1424" height="951" alt="image" src="https://github.com/user-attachments/assets/43c0268d-77ad-4f95-b974-a389554511e3" />
+
 
 ## Features
 - **Inspection**: Structured extraction and display of C2PA manifest stores, certificate chains, and assertions.
